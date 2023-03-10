@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html class="js no-touch  progressive-image  no-reduced-motion progressive" lang="zh-CN" dir="ltr">
+  <head>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <meta name="keyword" content="">
+
+    <title>Mac系统下使用VSCode搭建flask环境</title>
+
+    <link rel="canonical" href="/posts/flask-copy/">
+
+    <link rel="stylesheet" href="/css/global.css">
+
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+  </head>
+  <body class=" page-article   ">
+    <header>
+      <nav class="nav">
+  <div class="nav-wrapper">
+    <div class="nav-content-wrapper">
+      <div class="nav-content">
+        <a href="/" class="nav-title">大碗&#43;&#43;（快点这里返回首页）</a>
+        <div class="nav-menu">
+          <div class="nav-item-wrapper">
+            <a href="/posts" class="nav-item-content">目录</a>
+          </div>
+          <div class="nav-item-wrapper">
+            <a href="/about" class="nav-item-content">关于</a>
+          </div>
+          <div class="nav-item-wrapper">
+            <a href="/index.xml" class="nav-item-content" target="_blank">RSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    </header>
+    
+  
+  
+  <main id="main" class="main">
+      <section>
+        <article class="article">
+          
+          <div class=" featured-header ">
+            <div class="category component">
+              <div class="component-content">
+                <div class="category-eyebrow">
+                  <span class="category-eyebrow__category category_original">
+                    
+                      
+                        flask
+                      
+                    
+                  </span>
+                  <span class="category-eyebrow__date">2023年3月9日</span>
+                </div>
+              </div>
+            </div>
+            <div class="pagetitle component">
+              <div class="component-content">
+                <h1 class="hero-headline">Mac系统下使用VSCode搭建flask环境</h1>
+              </div>
+            </div>
+            <div class="component  featured-subhead ">
+              <div class="component-content"></div>
+            </div>
+
+            <div class="tagssheet component">
+              <div class="component-content">
+                
+                  <a href="/tags/flask" class="tag">
+                    flask
+                  </a>
+                
+                  <a href="/tags/mac-os" class="tag">
+                    Mac OS
+                  </a>
+                
+                  <a href="/tags/vscode" class="tag">
+                    VScode
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="pagebody">
+            
+            
+            
+            
+              
+            
+            <p class="component-content component">
+
+
+
+
+
+
+
+
+<figure class="image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-big">  <div class="component-content">
+    <div class="image-sharesheet">
+      <div class="image image-load image-asset image-81bae67a6c5c560b453c582ad5762b31" id="lht81bae67a6c5c560b453c582ad5762b31">
+        <picture  class="picture">
+          <img class="picture-image" data-src="/images/IMG_2685.jpg" alt="Flask是一个基于Python的微型Web应用框架，使用简单且灵活，适用于构建小型Web应用和API。"  />
+        </picture>
+      </div>
+    </div>
+    <div class="image-description">
+      <div class="image-caption">
+        Flask是一个基于Python的微型Web应用框架，使用简单且灵活，适用于构建小型Web应用和API。
+      </div>
+    </div>
+  </div>
+</figure>
+</p>
+
+<div class="component-content pagebody component">
+  <h2 id="准备工作" class="pagebody-header">
+    准备工作
+  </h2>
+</div><p class="component-content component">系统版本：macOS Catalina 10.15.7</p>
+<p class="component-content component">软件：vscode 1.74.3</p>
+<p class="component-content component">python版本：3.8.2 （低于3. X的小伙伴一定要先更新python版本，mac系统设置默认python版本请看<strong>问题2</strong>）</p>
+
+<div class="component-content pagebody component">
+  <h2 id="开始" class="pagebody-header">
+    开始
+  </h2>
+</div><p class="component-content component">第一步：打开在mac电脑上新建一个文件夹（你觉得合适的任意位置），以我的为例“新建Flask文件夹“
+
+
+
+
+
+
+
+
+
+<figure class="image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-big">  <div class="component-content">
+    <div class="image-sharesheet">
+      <div class="image image-load image-asset image-7100f9cde001b54494a14127e286659f" id="lht7100f9cde001b54494a14127e286659f">
+        <picture  class="picture">
+          <img class="picture-image" data-src="/images/image20230308174814708.png" alt="新建Flask文件"  />
+        </picture>
+      </div>
+    </div>
+    <div class="image-description">
+      <div class="image-caption">
+        新建Flask文件
+      </div>
+    </div>
+  </div>
+</figure>
+</p>
+
+          </div>
+          
+          
+          
+        </article>
+      </section>
+  </main>
+
+  <script>
+    var script = document.createElement("script");
+    script.src = "/js/initPost.js";
+    document.head.appendChild(script);
+  </script>
+
+    
+    <div class="footer-main ">
+  <div class="content-body footer-wraper">
+    <div class="footer-box">
+      <div class="foot-nav">
+        <div class="foot-nav-items">
+          <div class="item">
+            <div class="logo"></div>
+            <div class="email">Email: <a href="mailto:floyd.li@outlook.com">floyd.li@outlook.com</a></div>
+          </div>
+
+          <div class="item community">
+            <div class="item-title">社媒</div>
+            
+              <a href="https://github.com/floyd-li" target="_blank">Github</a>
+            
+              <a href="https://twitter.com/some-one" target="_blank">Twitter</a>
+            
+          </div>
+
+          <div class="item resources">
+            <div class="item-title">友链</div>
+            
+              <a href="https://yufengbiji.com/" target="_blank">驭风笔记</a>
+            
+              <a href="https://apple.com/" target="_blank">Apple</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="item copyright">
+          &copy; 2023
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/floyd-li/hugo-theme-itheme" target="_blank">iTheme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

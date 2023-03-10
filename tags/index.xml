@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 大碗&#43;&#43;（快点这里返回首页）</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on 大碗&#43;&#43;（快点这里返回首页）</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_Hans</language>
+    <copyright>dawanjia</copyright>
+    <lastBuildDate>Thu, 09 Mar 2023 22:37:00 +0800</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>flask</title>
+      <link>http://example.org/tags/flask/</link>
+      <pubDate>Thu, 09 Mar 2023 22:37:00 +0800</pubDate>
+      
+      <guid>http://example.org/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac OS</title>
+      <link>http://example.org/tags/mac-os/</link>
+      <pubDate>Thu, 09 Mar 2023 22:37:00 +0800</pubDate>
+      
+      <guid>http://example.org/tags/mac-os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VScode</title>
+      <link>http://example.org/tags/vscode/</link>
+      <pubDate>Thu, 09 Mar 2023 22:37:00 +0800</pubDate>
+      
+      <guid>http://example.org/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
