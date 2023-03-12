@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>安卓 on 大碗&#43;&#43;</title>
+    <link>http://g5dnit.site/tags/%E5%AE%89%E5%8D%93/</link>
+    <description>Recent content in 安卓 on 大碗&#43;&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_Hans</language>
+    <copyright>dawanjia</copyright>
+    <lastBuildDate>Sun, 12 Mar 2023 18:00:00 +0800</lastBuildDate><atom:link href="http://g5dnit.site/tags/%E5%AE%89%E5%8D%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac系统下通过adb线刷安卓系统</title>
+      <link>http://g5dnit.site/posts/xiaomi/</link>
+      <pubDate>Sun, 12 Mar 2023 18:00:00 +0800</pubDate>
+      
+      <guid>http://g5dnit.site/posts/xiaomi/</guid>
+      <description>准备工作 系统版本：macOS Catalina 10.15.7 手机型号：小米8屏下指纹版 环境安装：brew、android-platform-tools 操作 第一步：查看自</description>
+    </item>
+    
+  </channel>
+</rss>

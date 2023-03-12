@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html class="js no-touch  progressive-image  no-reduced-motion progressive" lang="zh-CN" dir="ltr">
+  <head>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <meta name="keyword" content="">
+
+    <title>Mac系统下通过adb线刷安卓系统</title>
+
+    <link rel="canonical" href="/posts/xiaomi/">
+
+    <link rel="stylesheet" href="/css/global.css">
+
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+  </head>
+  <body class=" page-article   ">
+    <header>
+      <nav class="nav">
+  <div class="nav-wrapper">
+    <div class="nav-content-wrapper">
+      <div class="nav-content">
+        <a href="/" class="nav-title">大碗&#43;&#43;</a>
+        <div class="nav-menu">
+          <div class="nav-item-wrapper">
+            <a href="/posts" class="nav-item-content">目录</a>
+          </div>
+          <div class="nav-item-wrapper">
+            <a href="/about" class="nav-item-content">关于</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    </header>
+    
+  
+  
+  <main id="main" class="main">
+      <section>
+        <article class="article">
+          
+          <div class=" featured-header ">
+            <div class="category component">
+              <div class="component-content">
+                <div class="category-eyebrow">
+                  <span class="category-eyebrow__category category_original">
+                    
+                      
+                        安卓
+                      
+                    
+                  </span>
+                  <span class="category-eyebrow__date">2023年3月12日</span>
+                </div>
+              </div>
+            </div>
+            <div class="pagetitle component">
+              <div class="component-content">
+                <h1 class="hero-headline">Mac系统下通过adb线刷安卓系统</h1>
+              </div>
+            </div>
+            <div class="component  featured-subhead ">
+              <div class="component-content"></div>
+            </div>
+
+            <div class="tagssheet component">
+              <div class="component-content">
+                
+                  <a href="/tags/%E5%AE%89%E5%8D%93" class="tag">
+                    安卓
+                  </a>
+                
+                  <a href="/tags/mac-os" class="tag">
+                    Mac OS
+                  </a>
+                
+                  <a href="/tags/%E7%BA%BF%E5%88%B7" class="tag">
+                    线刷
+                  </a>
+                
+                  <a href="/tags/adb" class="tag">
+                    adb
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="pagebody">
+            
+            
+            
+            
+              
+            
+            
+<div class="component-content pagebody component">
+  <h3 id="准备工作" class="pagebody-header">
+    准备工作
+  </h3>
+</div><p class="component-content component">系统版本：macOS Catalina 10.15.7</p>
+<p class="component-content component">手机型号：小米8屏下指纹版</p>
+<p class="component-content component">环境安装：brew、android-platform-tools</p>
+
+<div class="component-content pagebody component">
+  <h3 id="操作" class="pagebody-header">
+    操作
+  </h3>
+</div><p class="component-content component">第一步：查看自己电脑中有没有安装brew，在控制台输入“brew”后会出现如下
+
+
+
+
+
+
+
+
+
+<figure class="image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-inline">  <div class="component-content">
+    <div class="image-sharesheet">
+      <div class="image image-load image-asset image-394ecd0135633fcbc5256550294a209b" id="lht394ecd0135633fcbc5256550294a209b">
+        <picture  class="picture">
+          <img class="picture-image" data-src="http://g5dnit.site/images/xiaomi/image-20221104205907842.png" alt="查看brew|inline"  />
+        </picture>
+      </div>
+    </div>
+    <div class="image-description">
+      <div class="image-caption">
+        查看brew
+      </div>
+    </div>
+  </div>
+</figure>
+</p>
+<p class="component-content component">如果没有可以使用此命令来安装，并且能自动配置国内镜像资源</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34;</span></span></code></pre></div></div>
+  
+</div><p class="component-content component">按照指示一步一步安装即可</p>
+<p class="component-content component">遇到的坑：在个别方法中会出现连接不上或者下载之后无法安装的情况例如</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>brew install android-platform-tools</span></span></code></pre></div></div>
+  
+</div><div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>brew cask install android-platform-tools</span></span></code></pre></div></div>
+  
+</div><p class="component-content component">如果使用了这些都不能成功安装那就可能是网络的的问题</p>
+<p class="component-content component">第二步：别急着关闭，接着输入安装android-platform-tools指令</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>brew cask install android-platform-tools</span></span></code></pre></div></div>
+  
+</div><p class="component-content component">但是这时还是会提示错误，那是因为书写不对，要改成</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>brew install android-platform-tools --cask</span></span></code></pre></div></div>
+  
+</div><p class="component-content component">等下在安装就可以，安装完后验证安装是否成功输入“adb”，显示如下就代表安装成功了
+
+
+
+
+
+
+
+
+
+<figure class="image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-inline">  <div class="component-content">
+    <div class="image-sharesheet">
+      <div class="image image-load image-asset image-765cf1e6ad6f7913c9be4daffc91d037" id="lht765cf1e6ad6f7913c9be4daffc91d037">
+        <picture  class="picture">
+          <img class="picture-image" data-src="http://g5dnit.site/images/xiaomi/image-20221104211414203.png" alt="输入adb指令|inline"  />
+        </picture>
+      </div>
+    </div>
+    <div class="image-description">
+      <div class="image-caption">
+        输入adb指令
+      </div>
+    </div>
+  </div>
+</figure>
+</p>
+<p class="component-content component">这时最重要的就做完了，下面进入刷入安装包，在这之前我们要根据自己手机型号下载不同的rom包，每个系统版本的rom包都可以在这个网站获取：https://xiaomirom.com/，<strong>这里注意的是需要需要下载的是线刷包，并且小米手机已经解开了bl锁</strong>，连接手机使用命令查看设备号，只有出来设备号才行，如果没有设备号就是没有把<strong>usb调试</strong>打开</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>adb devices</span></span></code></pre></div></div>
+  
+</div><p class="component-content component">
+
+
+
+
+
+
+
+
+<figure class="image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-inline">  <div class="component-content">
+    <div class="image-sharesheet">
+      <div class="image image-load image-asset image-2ad40abd62b5c93a17ee8464a2c5ccac" id="lht2ad40abd62b5c93a17ee8464a2c5ccac">
+        <picture  class="picture">
+          <img class="picture-image" data-src="http://g5dnit.site/images/xiaomi/image-20221104213447212.png" alt="adb指令查看设备号|inline"  />
+        </picture>
+      </div>
+    </div>
+    <div class="image-description">
+      <div class="image-caption">
+        adb指令查看设备号
+      </div>
+    </div>
+  </div>
+</figure>
+</p>
+<p class="component-content component">记住这个设备号，输入代码让手机进入fastboot模式，为了保险起见再查询一遍设备号，注意这里指令不同是因为手机进入了fastboot模式，输入代码</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>fastboot devices </span></span></code></pre></div></div>
+  
+</div><p class="component-content component">
+
+
+
+
+
+
+
+
+<figure class="image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-inline">  <div class="component-content">
+    <div class="image-sharesheet">
+      <div class="image image-load image-asset image-f192d847b738c9670d848ea3aa3fa8f9" id="lhtf192d847b738c9670d848ea3aa3fa8f9">
+        <picture  class="picture">
+          <img class="picture-image" data-src="http://g5dnit.site/images/xiaomi/image-20221104213814539.png" alt="fastboot模式下查看设备号|inline"  />
+        </picture>
+      </div>
+    </div>
+    <div class="image-description">
+      <div class="image-caption">
+        fastboot模式下查看设备号
+      </div>
+    </div>
+  </div>
+</figure>
+</p>
+<p class="component-content component">随后使用“cd”指令进入线刷包目录，这里直接输入cd后把线刷包拖入终端</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>cd 线刷包存放地址</span></span></code></pre></div></div>
+  
+</div><p class="component-content component">
+
+
+
+
+
+
+
+
+<figure class="image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-inline">  <div class="component-content">
+    <div class="image-sharesheet">
+      <div class="image image-load image-asset image-f4e2b0667a91d220300bfcd241807ad0" id="lhtf4e2b0667a91d220300bfcd241807ad0">
+        <picture  class="picture">
+          <img class="picture-image" data-src="http://g5dnit.site/images/xiaomi/image-20221104215804763.png" alt="cd指令进入线刷包存放地址|inline"  />
+        </picture>
+      </div>
+    </div>
+    <div class="image-description">
+      <div class="image-caption">
+        cd指令进入线刷包存放地址
+      </div>
+    </div>
+  </div>
+</figure>
+</p>
+<p class="component-content component">把刚刚记下的设备号加上指令写入回车等待刷入完成即可，指令如下：</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>sh ./flash_all.sh -s 设备号</span></span></code></pre></div></div>
+  
+</div>
+          </div>
+          
+          
+          
+        </article>
+      </section>
+  </main>
+
+  <script>
+    var script = document.createElement("script");
+    script.src = "/js/initPost.js";
+    document.head.appendChild(script);
+  </script>
+
+    
+    <div class="footer-main ">
+  <div class="content-body footer-wraper">
+    <div class="footer-box">
+      <div class="foot-nav">
+        <div class="foot-nav-items">
+          <div class="item">
+            <div class="logo"></div>
+            <div class="email">Email: <a href="mailto:floyd.li@outlook.com">floyd.li@outlook.com</a></div>
+          </div>
+
+          <div class="item community">
+            <div class="item-title">社媒</div>
+            
+              <a href="https://github.com/floyd-li" target="_blank">Github</a>
+            
+              <a href="https://twitter.com/some-one" target="_blank">Twitter</a>
+            
+          </div>
+
+          <div class="item resources">
+            <div class="item-title">友链</div>
+            
+              <a href="https://yufengbiji.com/" target="_blank">驭风笔记</a>
+            
+              <a href="https://apple.com/" target="_blank">Apple</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="item copyright">
+          &copy; 2023
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/floyd-li/hugo-theme-itheme" target="_blank">iTheme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
