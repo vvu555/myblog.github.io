@@ -53,7 +53,7 @@
                   <span class="category-eyebrow__category category_original">
                     
                       
-                        安卓
+                        线刷
                       
                     
                   </span>
@@ -73,16 +73,20 @@
             <div class="tagssheet component">
               <div class="component-content">
                 
+                  <a href="/tags/%E7%BA%BF%E5%88%B7" class="tag">
+                    线刷
+                  </a>
+                
+                  <a href="/tags/%E5%B0%8F%E7%B1%B3" class="tag">
+                    小米
+                  </a>
+                
                   <a href="/tags/%E5%AE%89%E5%8D%93" class="tag">
                     安卓
                   </a>
                 
                   <a href="/tags/mac-os" class="tag">
                     Mac OS
-                  </a>
-                
-                  <a href="/tags/%E7%BA%BF%E5%88%B7" class="tag">
-                    线刷
                   </a>
                 
                   <a href="/tags/adb" class="tag">
@@ -139,15 +143,15 @@
   </div>
 </figure>
 </p>
-<p class="component-content component">如果没有可以使用此命令来安装，并且能自动配置国内镜像资源</p>
+<p class="component-content component">如果没有可以使用此命令来安装，并且能自动配置国内镜像资源，按照指示一步一步安装即可</p>
 <div class="component-content pagebody component code">
   
   
   
   <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34;</span></span></code></pre></div></div>
   
-</div><p class="component-content component">按照指示一步一步安装即可</p>
-<p class="component-content component">遇到的坑：在个别方法中会出现连接不上或者下载之后无法安装的情况例如</p>
+</div><p class="component-content component">第二步：别急着关闭，接着输入安装android-platform-tools指令</p>
+<p class="component-content component">这里注意安装<strong>android-platform-tools</strong>工具遇到的坑，在下面方法中可能会出现连接不上或者下载之后无法安装的情况例如</p>
 <div class="component-content pagebody component code">
   
   
@@ -161,21 +165,14 @@
   <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>brew cask install android-platform-tools</span></span></code></pre></div></div>
   
 </div><p class="component-content component">如果使用了这些都不能成功安装那就可能是网络的的问题</p>
-<p class="component-content component">第二步：别急着关闭，接着输入安装android-platform-tools指令</p>
-<div class="component-content pagebody component code">
-  
-  
-  
-  <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>brew cask install android-platform-tools</span></span></code></pre></div></div>
-  
-</div><p class="component-content component">但是这时还是会提示错误，那是因为书写不对，要改成</p>
+<p class="component-content component">先别疑惑，改成如下指令应该就可以安装了：</p>
 <div class="component-content pagebody component code">
   
   
   
   <div class=""><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>brew install android-platform-tools --cask</span></span></code></pre></div></div>
   
-</div><p class="component-content component">等下在安装就可以，安装完后验证安装是否成功输入“adb”，显示如下就代表安装成功了
+</div><p class="component-content component">第三步：等下在安装就可以，安装完后验证安装是否成功输入“adb”，显示如下就代表安装成功了
 
 
 
@@ -201,7 +198,7 @@
   </div>
 </figure>
 </p>
-<p class="component-content component">这时最重要的就做完了，下面进入刷入安装包，在这之前我们要根据自己手机型号下载不同的rom包，每个系统版本的rom包都可以在这个网站获取：https://xiaomirom.com/，<strong>这里注意的是需要需要下载的是线刷包，并且小米手机已经解开了bl锁</strong>，连接手机使用命令查看设备号，只有出来设备号才行，如果没有设备号就是没有把<strong>usb调试</strong>打开</p>
+<p class="component-content component">第四步：这时最重要的就做完了，下面进入刷入安装包，在这之前我们要根据自己手机型号下载不同的rom包，每个系统版本的rom包都可以在这个网站获取：https://xiaomirom.com/，<strong>这里注意的是需要需要下载的是线刷包，并且小米手机已经解开了bl锁</strong>，连接手机使用命令查看设备号，只有出来设备号才行，如果没有设备号就是没有把<strong>usb调试</strong>打开</p>
 <div class="component-content pagebody component code">
   
   
@@ -233,7 +230,7 @@
   </div>
 </figure>
 </p>
-<p class="component-content component">记住这个设备号，输入代码让手机进入fastboot模式，为了保险起见再查询一遍设备号，注意这里指令不同是因为手机进入了fastboot模式，输入代码</p>
+<p class="component-content component">第五步：记住这个设备号，输入代码让手机进入fastboot模式，为了保险起见再查询一遍设备号，注意这里指令不同是因为手机进入了fastboot模式，输入代码</p>
 <div class="component-content pagebody component code">
   
   
@@ -265,7 +262,7 @@
   </div>
 </figure>
 </p>
-<p class="component-content component">随后使用“cd”指令进入线刷包目录，这里直接输入cd后把线刷包拖入终端</p>
+<p class="component-content component">第六步：随后使用“cd”指令进入线刷包目录，这里直接输入cd后把线刷包拖入终端</p>
 <div class="component-content pagebody component code">
   
   
@@ -297,7 +294,7 @@
   </div>
 </figure>
 </p>
-<p class="component-content component">把刚刚记下的设备号加上指令写入回车等待刷入完成即可，指令如下：</p>
+<p class="component-content component">第七步：随后接着把刚刚记下的设备号加上指令写入回车等待刷入完成即可完成刷机，指令如下：</p>
 <div class="component-content pagebody component code">
   
   
