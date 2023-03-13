@@ -7,22 +7,49 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_Hans</language>
     <copyright>dawanjia</copyright>
-    <lastBuildDate>Sun, 12 Mar 2023 18:00:00 +0800</lastBuildDate><atom:link href="http://g5dnit.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 22:00:00 +0800</lastBuildDate><atom:link href="http://g5dnit.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac OS</title>
+      <link>http://g5dnit.site/tags/mac-os/</link>
+      <pubDate>Sun, 12 Mar 2023 22:00:00 +0800</pubDate>
+      
+      <guid>http://g5dnit.site/tags/mac-os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMware</title>
+      <link>http://g5dnit.site/tags/vmware/</link>
+      <pubDate>Sun, 12 Mar 2023 22:00:00 +0800</pubDate>
+      
+      <guid>http://g5dnit.site/tags/vmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>http://g5dnit.site/tags/windows/</link>
+      <pubDate>Sun, 12 Mar 2023 22:00:00 +0800</pubDate>
+      
+      <guid>http://g5dnit.site/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>虚拟机</title>
+      <link>http://g5dnit.site/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <pubDate>Sun, 12 Mar 2023 22:00:00 +0800</pubDate>
+      
+      <guid>http://g5dnit.site/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>adb</title>
       <link>http://g5dnit.site/tags/adb/</link>
       <pubDate>Sun, 12 Mar 2023 18:00:00 +0800</pubDate>
       
       <guid>http://g5dnit.site/tags/adb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mac OS</title>
-      <link>http://g5dnit.site/tags/mac-os/</link>
-      <pubDate>Sun, 12 Mar 2023 18:00:00 +0800</pubDate>
-      
-      <guid>http://g5dnit.site/tags/mac-os/</guid>
       <description></description>
     </item>
     

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_Hans</language>
     <copyright>dawanjia</copyright>
-    <lastBuildDate>Sun, 12 Mar 2023 18:00:00 +0800</lastBuildDate><atom:link href="http://g5dnit.site/tags/mac-os/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 22:00:00 +0800</lastBuildDate><atom:link href="http://g5dnit.site/tags/mac-os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac系统下VMware的安装和使用</title>
+      <link>http://g5dnit.site/posts/vmware/</link>
+      <pubDate>Sun, 12 Mar 2023 22:00:00 +0800</pubDate>
+      
+      <guid>http://g5dnit.site/posts/vmware/</guid>
+      <description>准备工作 系统版本：macOS Catalina 10.15.7 VMware版本：VMware Fusion 12.1.2-17964953 操作 第一步：双击VMware安装包安装后，打开软件把我们需要预先下载好Wi</description>
+    </item>
+    
     <item>
       <title>Mac系统下通过adb线刷安卓系统</title>
       <link>http://g5dnit.site/posts/xiaomi/</link>
